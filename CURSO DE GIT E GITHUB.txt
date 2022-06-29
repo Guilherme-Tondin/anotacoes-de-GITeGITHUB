@@ -1,0 +1,119 @@
+CURSO DE GIT E GITHUB
+
+dir - lista de diretórios na pasta em que está situado
+ls - LINUX
+
+cd /- change directory
+ambos
+
+cd .. - retroceder um nível
+
+cls - limpa terminar 
+clear - linux
+
+tab - completa o nome
+
+mkdir - cria pasta
+
+echo - printa na tela o que escrever e cria arquivo
+Exemplo: echo hello > hello.txt
+
+del - deleta arquivos dentro da pasta
+
+rmdir nome da pasta /S /Q
+rm -rf nome da pasta - linux
+
+---------------------------------------------------
+SHA1: Secure Hash Algorithm é um conuunto de funções hash 
+criptográficas projetadas pela NSA (National Security Agency)
+
+Encriptação geram conjunto de caracteres de 40 dígitos.
+É uma forma curta de representar um arquivo
+
+
+OBJETOS INTERNOS DO GIT = Blobs, Trees e Commits
+BLOBS - CONTÉM META DADOS DO GIT
+TREES - ARMAZENA AS BLOBS
+COMMIT - APONTA PARA TUDO 
+
+SÃO CONFIÁVEIS PELA ESTRUTURA.
+
+
+CHAVES SSH e TOKENS
+1º passo
+ssh-keygen -t ed25519 -C guilhermetondin78@gmail.com
+
+2º passo
+$ cd /c/Users/gui-t/.ssh/
+
+3º passo
+dir
+
+4º passo
+cat id_ed25519.pub
+
+5º passo
+dir
+
+6º passo
+pwd
+
+ir em github e SSH criar
+
+7º passo
+$ eval $(ssh-agent -s)
+
+8º passo
+dir
+
+9º passo
+$ ssh-add id_ed25519
+
+10º passo
+git clone passar_caminho_do_repositório em SSH
+
+
+TOKEN DE ACESSO PESSOAL
+
+----
+git init : inicializa repositório
+
+git init
+ls = lista o que tem dentro da pasta
+ls -a = mostra itens ocultos dentro da pasta
+
+$ git config --global user.email "guilhermetondin78@gmail.com"
+$ git config --global user.name "Guilherme"
+
+git add * vs git add .
+
+git commit -m "commit inicial"
+
+git commit
+
+mv nome_da_pasta.extensão ./ pasta_desejada : move uma pasta 
+ou arquivo para dentro de outra
+Exemplo: mv hello.txt ./ receitas/
+
+git add hello.txt receitas/
+
+git commit -m "cria pasta receitas, move arquivo hello para
+receitas"
+
+-------------------------------------------------------------
+GITHUB
+
+git config --list = lista todas as configurações feitas no 
+GIT
+
+git config --global --unset usar.email = remove os dados sal-
+vos do email.
+
+git remote origin link_dado_pelo_github = para postar no Git
+Hub
+
+git push origin master
+
+----
+corrigindo conflitos no GITHUB
+git pull origin master
