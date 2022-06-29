@@ -109,7 +109,7 @@ GIT
 git config --global --unset usar.email = remove os dados sal-
 vos do email.
 
-git remote origin link_dado_pelo_github = para postar no Git
+git remote add origin link_dado_pelo_github = para postar no Git
 Hub
 
 git push origin master
